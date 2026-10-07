@@ -2,6 +2,6 @@
   --yso-links-accent-color: #fae196;
 }
 
-#tab-hierarchy a:not(.yso-concept) {
+#tab-hierarchy:has(.yso-concept) a:not(.yso-concept) {
   color: var(--yso-links-accent-color);
 }
