@@ -21,7 +21,7 @@ YSO_LINKS_PLUGIN = {
 
 document.addEventListener('DOMContentLoaded', function() {
   window.ysoLinksCallback = function(params) {
-    if (window.SKOSMOS.vocab !== 'yso' && (params.pageType === 'vocab-home' || params.pageType === 'concept')) {
+    if (params.pageType === 'vocab-home' || params.pageType === 'concept') {
       YSO_LINKS_PLUGIN.highlightYSOLinks()
     }
   }
